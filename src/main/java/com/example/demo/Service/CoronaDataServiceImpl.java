@@ -102,6 +102,7 @@ public class CoronaDataServiceImpl implements CoronaDataService {
         Long data = new Long(0);
         String sent = "";
         for (String s : sentences) {
+            s = " " + s;
             if (s.indexOf(type) > 0) {
                 sent = s;
                 break;
